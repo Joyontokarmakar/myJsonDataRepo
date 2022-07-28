@@ -4,15 +4,15 @@
           "lastName": "1",
           "phone": "01521000001",
           "email": "user1@gmail.com",
-          "password": "asdf1234",
+          "password": "User1234",
           "userType": "Guest"
      },
      {
           "firstName": "User",
           "lastName": "2",
           "phone": "01521000002",
-          "email": "user2gmail.com",
-          "password": "asdf1234",
+          "email": "user2@gmail.com",
+          "password": "User2345",
           "userType": "Guest"
      },
      {
@@ -20,15 +20,15 @@
           "lastName": "3",
           "phone": "01521000003",
           "email": "user3@gmail.com",
-          "password": "asdf1234",
+          "password": "User3456",
           "userType": "Guest"
      },
      {
           "firstName": "User",
           "lastName": "4",
           "phone": "01521000004",
-          "email": "juser1@gmail.com",
-          "password": "asdf1234",
+          "email": "user4@gmail.com",
+          "password": "User4567",
           "userType": "Guest"
      },
      {
@@ -36,15 +36,7 @@
           "lastName": "Karmakar",
           "phone": "01521000005",
           "email": "joyonto@gmail.com",
-          "password": "asdf1234",
-          "userType": "Author"
-     },
-     {
-          "firstName": "Ratna Rani",
-          "lastName": "Karmakar",
-          "phone": "01521000006",
-          "email": "joyonto@gmail.com",
-          "password": "asdf1234",
+          "password": "Joyonto1234",
           "userType": "Author"
      }
 ]
