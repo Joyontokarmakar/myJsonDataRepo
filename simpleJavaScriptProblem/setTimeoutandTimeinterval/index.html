@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>setTimeOut And setTimeInterval problem</title>
+     <style>
+          .parent{
+               display: flex;
+               justify-content: start;
+               gap: 15px;
+          }
+          .btn{
+               background-color: #000;
+               color: #ddd;
+               padding: 5px 10px;
+               border: 1px solid #ddd;
+               cursor: pointer;
+               border-radius: 2px;
+          }
+          .disableBtn{
+               background-color: #ddd;
+               color: #000;
+               padding: 5px 10px;
+               border: 1px solid #ddd;
+               border-radius: 2px;
+               cursor: not-allowed;
+               pointer-events: none;
+          }
+          .none{
+               display: none;
+          }
+          .block{
+               display: block;
+          }
+     </style>
+</head>
+<body>
+     <div class="parent">
+          <button class="btn" id="sentBtn">SEND </button>
+          <div class="none" id="timeArea">You Have to wait U
+               ntil: <span id="showTime">00</span> </div>
+          <button class="btn none" id="reSentBtn">RESEND</button>
+     </div>
+
+     <script>
+          const sentBtn = document.getElementById("sentBtn");
+          const reSentBtn = document.getElementById("reSentBtn");
+          const showTime = document.getElementById("showTime");
+          const timeArea = document.getElementById("timeArea");
+
+          sentBtn.addEventListener('click', function(e){
+               timeArea.className =  "block"
+               timeCount(30000, reSentBtn, sentBtn);
+          });
+
+          reSentBtn.addEventListener('click', function(e){
+               console.log("sent Successfully")
+          });
+
+          function timeCount(time, reSentBtn, sentBtn){
+               setTimeout(()=> {
+                    setInterval(()=>{         
+                         if(time !=0){
+                              reSentBtn.className = "disableBtn block";
+                              sentBtn.className = "disableBtn";
+                              time = time - 1000;
+                              showTime.innerHTML = "00:"+ (time/1000)%60;
+                              console.log("time=>", time)
+                         } else if(time == 0){
+                              reSentBtn.className = "btn";
+                         }
+                    }, 1000);
+               }, 0);
+          }
+     </script>
+</body>
+</html>
