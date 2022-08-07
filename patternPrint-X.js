@@ -14,3 +14,6 @@ for (i = 0; i <= n; i++) {
   string += "\n";
 }
 console.log(string);
+
+
+// O(n^2)

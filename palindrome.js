@@ -9,3 +9,7 @@ if (x == y){
 } else {
   console.log("Not Palindrome")
 }
+
+
+
+//O(n)
