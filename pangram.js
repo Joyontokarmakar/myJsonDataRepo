@@ -8,11 +8,12 @@ const checkPangram = (input) => {
           }
      }
      console.log("Object: ",JSON.stringify(object, undefined, 4))
+     
      if(alphabet.every(char => stringInput.includes(char))){
-          return 'pangram'
+          console.log('Pangram');
      } else {
-          return 'Not pangram'
+          console.log('Not Pangram');
      }
 };
-// console.log(checkPangram('The quick brown fox jumps over the lazy dog.'));
-console.log(checkPangram('Joyonto karmakar'));
+// checkPangram('The quick brown fox jumps over the lazy dog.');
+checkPangram('Joyonto karmakar');
