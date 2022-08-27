@@ -5,7 +5,9 @@ Colors ---------------------
      lightColor:    #FFFFFF
      darkColor:     #000000
      grayColor:     #7D7D7E
+     redColor:      #FF5E5E
      bgColor:       #FCFBFF
+     textColor:     #26262E
 
 Fonts ----------------------
      typography:    poppins
@@ -37,11 +39,13 @@ Fonts ----------------------
 
 .mainBody {
      width: 1696px;
+     display: block;
 }
 
 .header {
      height: 90px;
      background: #000000;
+     padding: 15px 30px;
 }
 
 .bodyContent {
@@ -71,4 +75,143 @@ Fonts ----------------------
      font-weight: 500;
      font-size: 14px;
      color: #7D7D7E;
+}
+
+/* Header Design Start */
+.headerMenu{
+     float: right;
+}
+.balanceInquery{
+     float: left;
+     margin: 30px 15px auto 0;
+     font-family: 'poppins';
+     font-weight: 300;
+     font-size: 20px;
+     line-height: 30px;
+     color: #FFFFFF;
+}
+
+.mainBalance{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 30px;
+     line-height: 30px;
+     color: #FF7901;
+}
+/* dropdownstyle */
+.dropdown {
+     background: rgb(248, 248, 248);
+     float: right;
+     margin: 15px 0px auto 15px;
+     padding: 10px;
+     border: solid 1px rgb(222, 222, 222);
+     border-radius: 45px;
+     width: 200px;
+     transition: all 0.2s ease-in-out;
+     overflow: hidden;
+     cursor: pointer;
+}
+
+.dropdownContent {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.dropdownAvater{
+     width: 40px;
+}
+
+.userName{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 20px;
+     color: #26262E;
+}
+
+.dropdownIcon{
+     width: 12px;
+     height: 6px;
+}
+
+.dropdownMenuList{
+     display: block;
+     height: 255px;
+     padding: 0 20px;
+}
+
+
+.dropdownMenuList ul{
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+}
+
+.dropdown.closed .dropdownMenuList{
+     height: 0px;
+     display: none;
+}
+
+.openMargin{
+     margin-top: 30px;
+}
+
+.dropdown.closed .openMargin{
+     margin-top: 0px;
+}
+
+.dropdownMenuItem {
+     color: #7D7D7E;
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 30px;
+     margin: 10px 0px;
+}
+
+.dropdown.closed .dropdownIcon {
+     transform: rotate(180deg);
+}
+
+
+.logoutBtn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 9px;
+     width: 160px;
+     height: 48px;
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 16px;
+     color: #FF5E5E;
+     background: rgba(255, 1, 1, 0.1);
+     border: 0px;
+     border-radius: 5px;
+}
+
+/* bodyContent design start */
+
+.profileInfo,.cardSection{
+     display: flex;
+     gap: 30px;
+}
+
+.aboutUser{
+     width: 325px;
+     background: #FFFFFF;
+     border: 1px solid #F2F2F4;
+     border-radius: 10px;
+}
+
+.cardSection{
+     background: #FFFFFF;
+     border: 1px solid #F2F2F4;
+     border-radius: 10px;
+}
+
+.singleCard{
+     width: 387px;
+     border: 1px solid #F2F2F4;
+     border-radius: 10px;
 }
