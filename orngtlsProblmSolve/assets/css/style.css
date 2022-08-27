@@ -1,0 +1,19 @@
+/* 
+
+--all Color codes-- 
+     brandColor:    #FF79012;
+     darkColor:     #000000;
+     lightColor:    #FFFFFF;
+     grayColor:     #7D7D7E;
+     lightGrayolor: #FCFBFF;
+
+--all Fonts--
+typographyFonts: poppins
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
