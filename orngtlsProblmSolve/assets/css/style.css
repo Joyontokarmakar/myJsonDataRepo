@@ -35,11 +35,13 @@ Fonts ----------------------
      width: 224px;
      background: #000000;
      padding: 11px 0 11px 42px;
+     height: 100vh;
 }
 
 .mainBody {
      width: 1696px;
      display: block;
+     height: 100vh;
 }
 
 .header {
@@ -53,6 +55,7 @@ Fonts ----------------------
      padding: 30px;
      background: #FCFBFF;
      overflow-y: scroll;
+     height: calc(100vh - 158px);
 }
 
 /* SideNav Design Start */
@@ -335,4 +338,116 @@ Fonts ----------------------
 }
 .profileInfoTab > .tabContent > .active {
      display: block;
+}
+
+.checkedAction{
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
+}
+
+.singleLabel{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+/* Switch Design Start */
+.switchLabel{
+     padding: 0 4px;
+     width: 50px;
+     height: 30px;
+     border-radius: 50px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+}
+.switchLabelPreBack{
+     bbackground-color: #FFFFFF;
+     border: 1px solid #FF7901;
+}
+.switchLabelPostBack{
+     background-color: #FF7901;
+     border: 1px solid #FF7901
+}
+
+.switchBox{
+     width: 20px;
+     height: 20px;
+     border-radius:50px;
+     transition-property: all;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     transition-duration: 700ms;
+}
+
+.switchBoxPreBack{
+     background-color: #FF7901;
+}
+
+.switchBoxPostBack{
+     background-color: #FFFFFF;
+}
+
+.switchInput{
+     display: none;
+}
+
+.switchInput:checked + .switchBox {
+     margin-left: 25px;
+}
+
+.switchBox:hover {
+     box-shadow: 0px 0px 0 8px #0e528933;
+}
+
+.labelData{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 32px;
+}
+
+hr.divider{
+     border-top: 1px solid #F2F2F4;
+}
+
+.lowCreditSection{
+     display: flex;
+     justify-content: space-between;
+     gap: 30px;
+     margin-left: 70px;
+}
+
+.lowCreditInput{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+}
+
+.lowCreditInput input{
+     padding: 14px 20px;
+     background: #FFFFFF;
+     border: 1px solid #F2F2F4;
+     border-radius: 10px;
+}
+
+.lowCreditInput input::placeholder{
+     font-family: 'Poppins';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 32px;
+}
+
+.saveBtn{
+     width: 150px;
+     height: 48px;
+     color: #FFFFFF;
+     background: #FF7901;
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 28px;
+     border-radius: 5px;
+     box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
+     border: none;
 }
