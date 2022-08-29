@@ -21,7 +21,7 @@ Fonts ----------------------
 
 @font-face {
      font-family: poppins;
-     src: url("../fonts/Poppins-Regular.ttf");
+     src: url("../fonts/Poppins-Medium.ttf");
 }
 
 /* Layout Design */
@@ -52,6 +52,7 @@ Fonts ----------------------
 .bodyContent {
      padding: 30px;
      background: #FCFBFF;
+     overflow-y: scroll;
 }
 
 /* SideNav Design Start */
@@ -283,53 +284,55 @@ Fonts ----------------------
 
 /* Tab Design Start */
 .profileInfoTab {
-     background-color: #F2F2F4;
+     background-color: #FFFFFF;
+     border: 1px solid #F2F2F4;
+     border-radius: 10px;
+     margin-top: 30px;
 }
 
-.profileInfoTab .tabName {
-     float: left;
+.profileInfoTab > .tabName {
      width: 100%;
-     margin: 0;
      list-style-type: none;
-     border-bottom: 1px solid #ddd;
+     border-bottom: 2px solid #F2F2F4;
      display: flex;
      justify-content: center;
    }
-.profileInfoTab .tabName > li {
-     float: left;
+.profileInfoTab > .tabName > li {
+     padding: 30px 0 8px 0;
 }
-.profileInfoTab .tabName > li > a {
-     float: left;
-     margin-right: 2px;
-     line-height: 1.42857143;
-     padding: 10px;
-     border: 1px solid transparent;
-     border-radius: 4px 4px 0 0;
+.profileInfoTab > .tabName > li > a {
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 28px;
+     padding: 10px 16px;
+     text-decoration: none;
+     color: #26262E;
 }
-.profileInfoTab .tabName > li > a:hover {
-     border-color: #eee #eee #ddd;
+.profileInfoTab > .tabName > li > a:hover {
+     border-bottom: 2px solid #FF7901;
+     border-radius: 10px 10px 0px 0px;
 }
-.profileInfoTab .tabName > li.active > a,
-.profileInfoTab .tabName > li.active > a:hover,
-.profileInfoTab .tabName > li.active > a:focus {
-     color: #555;
-     cursor: default;
-     background-color: #fff;
-     border: 1px solid #ddd;
-     border-bottom-color: transparent;
+.profileInfoTab > .tabName > li.active > a,
+.profileInfoTab > .tabName > li.active > a:hover,
+.profileInfoTab > .tabName > li.active > a:focus {
+     color: #FF7901;
+     background-color: transparent;
+     border: none;
+     border-bottom: 2px solid #FF7901;
+     border-radius: 10px 10px 0px 0px;
 }
-.profileInfoTab .tabContent {
-     float: left;
+.profileInfoTab > .tabContent {
      width: 100%;
 }
-.profileInfoTab .tabContent > .tabData {
+.profileInfoTab > .tabContent > .tabData {
      display: none;
 }
-.profileInfoTab .tabContent > .tabData.active {
+.profileInfoTab > .tabContent > .tabData.active {
      display: block;
-     padding: 2.5% 3.5%;
-     background-color: #efefef;
+     padding: 50px 318px;
+     background-color: #FFFFFF;
 }
-.profileInfoTab .tabContent > .active {
+.profileInfoTab > .tabContent > .active {
      display: block;
 }
