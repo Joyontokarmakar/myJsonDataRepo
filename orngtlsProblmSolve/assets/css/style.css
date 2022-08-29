@@ -1,17 +1,18 @@
 /*==================================
+Colors -----------------------------
+     1.brandColor:       #FF7901
+     2.lightColor:       #FFFFFF
+     3.darkColor:        #000000
+     4.grayColor:        #7D7D7E
+     5.redColor:         #FF5E5E
+     6.bgColor:          #FCFBFF
+     7.textColor:        #26262E
+     8.inoutBoxColor:    #BDBDBD
+     9.cardBackground:   #F2F2F4
+     10.iconBackground:  #FFD7D7
 
-Colors ---------------------
-     brandColor:    #FF7901
-     lightColor:    #FFFFFF
-     darkColor:     #000000
-     grayColor:     #7D7D7E
-     redColor:      #FF5E5E
-     bgColor:       #FCFBFF
-     textColor:     #26262E
-
-Fonts ----------------------
-     typography:    poppins
-
+Fonts -----------------------------
+     1.typography:       poppins
 ==================================*/
 
 * {
@@ -291,6 +292,7 @@ Fonts ----------------------
      display: flex;
      justify-content: center;
      align-items: center;
+     cursor: pointer;
 }
 
 .cardName{
@@ -443,6 +445,11 @@ Fonts ----------------------
      font-weight: 500;
      font-size: 16px;
      line-height: 32px;
+     color: #26262E;
+}
+
+.uncheckedSwitchLabel{
+     color: #7D7D7E;
 }
 
 hr.divider{
@@ -462,6 +469,18 @@ hr.divider{
      flex-direction: column;
 }
 
+.lowCreditInput label{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 32px;
+     color: #7D7D7E;
+}
+
+.lowCreditInput label span{
+     color: #FF7901
+}
+
 .lowCreditInput input{
      padding: 14px 20px;
      background: #FFFFFF;
@@ -474,6 +493,7 @@ hr.divider{
      font-weight: 400;
      font-size: 16px;
      line-height: 32px;
+     color: #BDBDBD;
 }
 
 .saveBtn{
