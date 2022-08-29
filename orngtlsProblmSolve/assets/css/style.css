@@ -63,6 +63,11 @@ Fonts ----------------------
      margin-top: 48px;
 }
 
+.subNavList{
+     margin-top: 30px;
+     margin-left: 10px;
+}
+
 .listItem{
      margin-top: 30px;
      display: flex;
@@ -70,8 +75,20 @@ Fonts ----------------------
      gap: 22px;
 }
 
-.listItem:hover{
-     cursor: pointer;
+.listItem:hover,
+.listItem.active{
+     border-inline-end: 3px solid #ff7901;
+}
+
+.listItem.active .menuName,
+.listItem:hover .menuName{
+     color: #FFFFFF;
+}
+
+.listItem:hover img,
+.listItem.active img{
+     filter: invert(13%) sepia(10%) saturate(7466%) hue-rotate(0deg) brightness(104%) contrast(156%);
+     /* fill: #FF7901; */
 }
 
 .menuName{
@@ -80,11 +97,14 @@ Fonts ----------------------
      font-weight: 500;
      font-size: 14px;
      color: #7D7D7E;
+     text-decoration: none;
 }
 
 /* Header Design Start */
 .headerMenu{
      float: right;
+     position: absolute;
+     right: 30px;
 }
 .balanceInquery{
      float: left;
@@ -143,7 +163,6 @@ Fonts ----------------------
      display: inline-block;
      height: 255px;
      padding: 0 20px;
-     position: relative;
 }
 
 
@@ -255,6 +274,11 @@ Fonts ----------------------
      position: relative;
 }
 
+.singleCard:hover{
+     border: 1px solid #FF7901;
+     cursor: pointer
+}
+
 .cardAction{
      position: absolute;
      width: 30px;
@@ -263,6 +287,7 @@ Fonts ----------------------
      top: 10px;
      background-color: #F2F2F4;
      border-radius: 50px;
+     border: none;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -273,7 +298,7 @@ Fonts ----------------------
      font-weight: 500;
      font-size: 20px;
      line-height: 32px;
-     color: #7D7D7E
+     color: #7D7D7E;
 }
 
 .cardNumber{
@@ -281,9 +306,22 @@ Fonts ----------------------
      font-weight: 500; 
      font-size: 20px;  
      line-height: 32px;
-     color: #BDBDBD
+     color: #BDBDBD;
+     margin-top: 30px;
 }
 
+.singleCard:hover .cardAction{
+     background-color: #FFD7D7
+}
+
+.singleCard:hover .cardAction>img{
+     filter: invert(13%) sepia(94%) saturate(7466%) hue-rotate(0deg) brightness(94%) contrast(115%);
+}
+
+.singleCard:hover .cardName,
+.singleCard:hover .cardNumber{
+     color: #26262E;
+}
 
 /* Tab Design Start */
 .profileInfoTab {
