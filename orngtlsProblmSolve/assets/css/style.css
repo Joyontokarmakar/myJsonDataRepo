@@ -46,6 +46,7 @@ Fonts ----------------------
      height: 90px;
      background: #000000;
      padding: 15px 30px;
+     position: sticky;
 }
 
 .bodyContent {
@@ -135,9 +136,10 @@ Fonts ----------------------
 }
 
 .dropdownMenuList{
-     display: block;
+     display: inline-block;
      height: 255px;
      padding: 0 20px;
+     position: relative;
 }
 
 
@@ -192,8 +194,9 @@ Fonts ----------------------
 
 /* bodyContent design start */
 
-.profileInfo,.cardSection{
-     display: flex;
+.profileInfo,
+.cardSection .allCards{
+     display: -webkit-box;
      gap: 30px;
 }
 
@@ -202,16 +205,131 @@ Fonts ----------------------
      background: #FFFFFF;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
+     padding: 40px;
+}
+
+.userAvater{
+     margin: 0 auto;
+     display: block;
+}
+
+.userInfo{
+     text-align: center;
+}
+
+.userInfo p{
+     font-family: 'Poppins';
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 20px;
+     color: #7D7D7E;
 }
 
 .cardSection{
      background: #FFFFFF;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
+     padding: 70px 30px;
+}
+
+.sectionTitle{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 30px;
+}
+
+.allCards{
+     margin-top: 10px;
 }
 
 .singleCard{
      width: 387px;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
+     padding: 30px;
+     position: relative;
+}
+
+.cardAction{
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     right: 10px;
+     top: 10px;
+     background-color: #F2F2F4;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.cardName{
+     font-family: 'Poppins';
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 32px;
+     color: #7D7D7E
+}
+
+.cardNumber{
+     font-family: 'Poppins';
+     font-weight: 500; 
+     font-size: 20px;  
+     line-height: 32px;
+     color: #BDBDBD
+}
+
+
+/* Tab Design Start */
+.profileInfoTab {
+     background-color: #F2F2F4;
+}
+
+.profileInfoTab .tabName {
+     float: left;
+     width: 100%;
+     margin: 0;
+     list-style-type: none;
+     border-bottom: 1px solid #ddd;
+     display: flex;
+     justify-content: center;
+   }
+.profileInfoTab .tabName > li {
+     float: left;
+}
+.profileInfoTab .tabName > li > a {
+     float: left;
+     margin-right: 2px;
+     line-height: 1.42857143;
+     padding: 10px;
+     border: 1px solid transparent;
+     border-radius: 4px 4px 0 0;
+}
+.profileInfoTab .tabName > li > a:hover {
+     border-color: #eee #eee #ddd;
+}
+.profileInfoTab .tabName > li.active > a,
+.profileInfoTab .tabName > li.active > a:hover,
+.profileInfoTab .tabName > li.active > a:focus {
+     color: #555;
+     cursor: default;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     border-bottom-color: transparent;
+}
+.profileInfoTab .tabContent {
+     float: left;
+     width: 100%;
+}
+.profileInfoTab .tabContent > .tabData {
+     display: none;
+}
+.profileInfoTab .tabContent > .tabData.active {
+     display: block;
+     padding: 2.5% 3.5%;
+     background-color: #efefef;
+}
+.profileInfoTab .tabContent > .active {
+     display: block;
 }
