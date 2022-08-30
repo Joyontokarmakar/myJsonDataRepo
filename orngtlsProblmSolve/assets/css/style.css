@@ -30,6 +30,7 @@ Fonts -----------------------------
      display: flex;
      justify-content: space-between;
      height: 100vh;
+     overflow-y: hidden;
 }
 
 .sideNav {
@@ -53,13 +54,13 @@ Fonts -----------------------------
 .bodyContent {
      background: #FCFBFF;
      overflow-y: scroll;
-     height: calc(100vh - 158px);
+     height: calc(100vh - 160px);
 }
 
 /* SideNav Design Start */
 .navList{
      margin-top: 48px;
-     height: calc(100vh - 110px);
+     height: calc(100vh - 132px);
      overflow-y: scroll;
 }
 
