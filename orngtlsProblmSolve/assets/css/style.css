@@ -213,6 +213,7 @@ Fonts -----------------------------
      background: rgba(255, 1, 1, 0.1);
      border: 0px;
      border-radius: 5px;
+     cursor: pointer;
 }
 
 /* bodyContent design start */
