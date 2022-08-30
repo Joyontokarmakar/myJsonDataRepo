@@ -51,7 +51,6 @@ Fonts -----------------------------
 }
 
 .bodyContent {
-     padding: 30px;
      background: #FCFBFF;
      overflow-y: scroll;
      height: calc(100vh - 158px);
@@ -60,6 +59,8 @@ Fonts -----------------------------
 /* SideNav Design Start */
 .navList{
      margin-top: 48px;
+     height: calc(100vh - 110px);
+     overflow-y: scroll;
 }
 
 .subNavList{
@@ -213,8 +214,6 @@ Fonts -----------------------------
 
 .profileInfo,
 .cardSection .allCards{
-     display: -webkit-box;
-     gap: 30px;
      width: 100%;
 }
 
@@ -222,7 +221,6 @@ Fonts -----------------------------
      background: #FFFFFF;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
-     padding: 40px;
 }
 
 .userAvater{
@@ -245,7 +243,6 @@ Fonts -----------------------------
      background: #FFFFFF;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
-     padding: 70px 30px;
 }
 
 .sectionTitle{
@@ -318,7 +315,6 @@ Fonts -----------------------------
      background-color: #FFFFFF;
      border: 1px solid #F2F2F4;
      border-radius: 10px;
-     margin-top: 30px;
 }
 
 .profileInfoTab > .tabName {
@@ -495,4 +491,41 @@ hr.divider{
      border-radius: 5px;
      box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
      border: none;
+}
+
+
+
+/* Selector and scrolbar design */
+
+::selection {
+     background-color: #7D7D7E;
+     color: #FFEBEC;
+}
+   
+/* Scroll bar */
+body {
+     overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+     width: 8px;
+     height: 8px;
+     margin: 0px 2px;
+}
+
+::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px #fff;
+     -webkit-box-shadow: inset 0 0 5px #fff;
+     border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+     background: #FF7901 !important;
+     -webkit-background: #FF7901 !important;
+     border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+     background: #7D7D7E !important;
+     -webkit-background: #7D7D7E !important;
 }

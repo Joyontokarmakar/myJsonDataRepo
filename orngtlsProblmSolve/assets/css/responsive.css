@@ -69,9 +69,31 @@
           width: 20px;
           height: 20px;
      }
+
+     .profileInfo,
+     .cardSection .allCards{
+          display: -webkit-box;
+          gap: 30px;
+     }
+
+     .bodyContent {
+          padding: 30px;
+     }
+
+     .profileInfoTab {
+          margin-top: 30px;
+     }
+
+     .cardSection{
+          padding: 70px 30px;
+     }
+
+     .aboutUser{
+          padding: 40px;
+     }
 }
 
-@media only screen and (min-width:0) and (max-width:1399px) {
+@media only screen and (min-width:1100px) and (max-width:1399px) {
      .sideNav {
           width: 224px;
      }
@@ -94,7 +116,7 @@
 
      .userAvater {
           width: 85px;
-      }
+     }
 
      .singleCard{
           width: 180px;
@@ -146,9 +168,130 @@
           width: 15px;
           height: 15px;
      }
+
+     .profileInfo,
+     .cardSection .allCards{
+          display: -webkit-box;
+          gap: 20px;
+     }
+
+     .bodyContent {
+          padding: 20px;
+     }
+
+     .profileInfoTab {
+          margin-top: 20px;
+     }
+
+     .cardSection{
+          padding: 50px 25px;
+     }
+
+     .aboutUser{
+          padding: 30px;
+     }
 }
 
-/* @media only screen and (min-width:992px) and (max-width:1099px) {}
+@media only screen and (min-width:992px) and (max-width:1099px) {
+     .sideNav {
+          width: 224px;
+     }
+
+     .mainBody {
+          width: 1180px;
+     }
+
+     .dropdown{
+          width: 200px;
+     }
+
+     .logoutBtn{
+          width: 160px;
+     }
+
+     .aboutUser{
+          width: 170px;
+     }
+
+     .userAvater {
+          width: 85px;
+     }
+
+     .singleCard{
+          width: 180px;
+     }
+
+     .userInfo p{
+          font-size: 11px;
+     }
+
+     .menuName,
+     .dropdownMenuItem{
+          font-size: 12px;
+     }
+
+     .logoutBtn,
+     .profileInfoTab > .tabName > li > a,
+     .labelData,
+     .lowCreditInput label,
+     .lowCreditInput input::placeholder,
+     .saveBtn{
+          font-size: 14px;
+     }
+
+     .balanceInquery,
+     .userName,
+     .cardName,
+     .cardNumber{
+          font-size: 18px;
+     }
+
+     .sectionTitle{
+          font-size: 20px;
+     }
+
+     .mainBalance{
+          font-size: 25px;
+     }
+
+     .profileInfoTab > .tabContent > .tabData.active {
+          padding: 50px 242px;
+     }
+
+     .switchLabel{
+          width: 40px;
+          height: 25px;
+     }
+
+     .switchBox{
+          width: 15px;
+          height: 15px;
+     }
+
+     .profileInfo,
+     .cardSection .allCards{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+     }
+     
+     .bodyContent {
+          padding: 20px;
+     }
+
+     .profileInfoTab {
+          margin-top: 20px;
+     }
+
+     .cardSection{
+          padding: 50px 25px;
+     }
+
+     .aboutUser{
+          padding: 30px;
+     }
+}
+
 @media only screen and (min-width:768px) and (max-width:991px) {}
 @media only screen and (min-width:576px) and (max-width:767px) {}
-@media only screen and (max-width:575px) {} */
+@media only screen and (max-width:575px) {}
