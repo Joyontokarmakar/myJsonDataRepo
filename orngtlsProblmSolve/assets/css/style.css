@@ -79,6 +79,7 @@ Fonts -----------------------------
 .listItem:hover,
 .listItem.active{
      border-inline-end: 3px solid #ff7901;
+     cursor: pointer;
 }
 
 .listItem.active .menuName,
